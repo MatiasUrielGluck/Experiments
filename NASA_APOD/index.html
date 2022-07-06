@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Práctica APIs</title>
+</head>
+<body>
+    <div id="app">
+        <div class="loading-container" v-if="loading">
+            <h1>Loading...</h1>
+        </div>
+        <div class="container" v-if="!loading">
+            <h1>NASA Astronomy Picture of the Day</h1>
+            <div class="card">
+                <h2>{{title}}</h2>
+                <a v-bind:href="imgSrc"><img v-bind:src="imgSrc" alt="image"></a>
+                <p>{{desc}}</p>
+            </div>
+        </div>
+
+        <footer>
+            <p>Created by <span>Matías Uriel Gluck</span></p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>

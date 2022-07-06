@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --fs-big: 2rem;
+    --fs-regular: 1.5rem;
+    --fs-small: 1.125rem;
+}
+
+#app {
+    background: #acacac;
+}
+
+.container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container h1 {
+    text-align: center;
+    font-size: var(--fs-big);
+    margin-bottom: 2rem;
+}
+
+.card {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 60%;
+    gap: 1.5rem;
+}
+
+.card h2 {
+    text-align: center;
+    font-size: var(--fs-regular);
+}
+
+.card p {
+    text-align: justify;
+    font-size: var(--fs-small);
+    letter-spacing: 1px;
+    line-height: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 12px;
+}
+
+footer {
+    color: #474747;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer span {
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 768px) {
+    .card {
+        max-width: 95%;
+    }
+}
